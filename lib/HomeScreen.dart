@@ -38,9 +38,6 @@ class _HomeScreenState extends State<HomeScreen> {
                 fontSize: 20,
               ),
             ),
-            SizedBox(
-              height: 30,
-            ),
             Expanded(
               child: FutureBuilder<List<DataModel>>(
                 future: service.getVideosAPI(),
