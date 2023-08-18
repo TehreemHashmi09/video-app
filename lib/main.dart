@@ -53,9 +53,7 @@ class _MyAppState extends State<MyApp> with RestorationMixin {
       restorationScopeId: 'root',
       debugShowCheckedModeBanner: false,
       title: 'Video App',
-      home: HomeScreen(
-        restorationId: 'VideoScreen',
-      ),
+      home: HomeScreen(restorationId: 'VideoScreen'),
     );
   }
 
