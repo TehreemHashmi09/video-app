@@ -1,7 +1,8 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import 'package:video_app/DataModel.dart';
+
+import 'DataModel.dart';
 
 class ApiServices {
   Future<List<DataModel>> getVideosAPI() async {
