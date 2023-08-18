@@ -60,11 +60,7 @@ class _VideoScreenState extends State<VideoScreen> with RestorationMixin {
                       SizedBox(
                         child: VideoPlayer(controller!),
                       ),
-                      Positioned(
-                        top: 0,
-                        left: 0,
-                        right: 0,
-                        bottom: 0,
+                      Positioned.fill(
                         child: GestureDetector(
                           behavior: HitTestBehavior.opaque,
                           onTap: () {
