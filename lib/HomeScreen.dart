@@ -1,13 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:get_it/get_it.dart';
 import 'package:video_app/DataModel.dart';
-import 'package:video_app/VideoScreen.dart';
 
 import 'ApiServices.dart';
+import 'file.dart';
 
 class HomeScreen extends StatefulWidget {
-  final String restorationId;
-  const HomeScreen({super.key, required this.restorationId});
+  const HomeScreen({
+    super.key,
+  });
 
   @override
   State<HomeScreen> createState() => _HomeScreenState();
@@ -86,7 +87,6 @@ class _HomeScreenState extends State<HomeScreen> {
                                     MaterialPageRoute(
                                       builder: (context) => VideoScreen(
                                         videoUrl: item.videoUrl!,
-                                        restorationId: widget.restorationId,
                                       ),
                                     ),
                                   );
