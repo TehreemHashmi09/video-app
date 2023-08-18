@@ -40,5 +40,21 @@ class DataModel {
     );
   }
 
+  Map<String, dynamic> toJson() {
+    return {
+      "id": id,
+      "title": title,
+      "thumbnailUrl": thumbnailUrl,
+      "duration": duration,
+      "uploadTime": uploadTime,
+      "views": views,
+      "author": author,
+      "videoUrl": videoUrl,
+      "description": description,
+      "subscriber": subscriber,
+      "isLive": isLive,
+    };
+  }
+
 //
 }
